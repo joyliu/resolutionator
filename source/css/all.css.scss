@@ -1,0 +1,140 @@
+@import "normalize.scss";
+@import "settings";
+@import "foundation.scss";
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+.header {
+  margin-top: 3rem;
+}
+
+.resolution {
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #424246;
+}
+
+.button-container {
+  margin-top: 3rem;
+  padding-bottom: 180px;
+}
+
+.button {
+  background-color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: #222;
+  }
+}
+
+.facebook-btn {
+  background-color: #fff;
+  color: #3c599b;
+  border-color: #3c599b;
+  &:hover {
+    color: #fff;
+    background-color: #3c599b;
+  }
+}
+
+.twitter-btn {
+  background-color: #fff;
+  color: #55ACEE;
+  border-color: #55ACEE;
+  &:hover {
+    color: #fff;
+    background-color: #55ACEE;
+  }
+}
+
+.toggle {
+  color: #222;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+#footer {
+  position: relative;
+  margin-top: -180px; /* negative value of footer height */
+  height: 180px;
+  padding-top: 2.5rem;
+  clear:both;
+  background-color: #181818;
+}
+
+#philosophie-logo {
+  width: 230px;
+  height: 41px;
+  overflow:visible;
+  polygon, path, rect {fill: #424246;}
+}
+
+// SLOT MACHINE STYLING
+.machineContainer {
+  height: 38px;
+  padding: 0 5px;
+}
+
+.machineResult {
+  color:#000;
+  text-align: center;
+  display: none;
+}
+
+.textMachine {
+  height: 38px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid #666;
+}
+
+#selection1 {
+  width: 240px;
+}
+#selection2 {
+  width: 240px;
+}
+#selection3 {
+  width: 240px;
+}
+
+.slot {
+  height: 38px;
+  font-size: 1.4rem;
+}
+
+.comma {
+  font-size: 2.5rem;
+}
+
+// PAGE-SPECIFIC STYLING
+.index {
+  background-color: #fff;
+  text-align: center;
+}
+
+.nsfw {
+  // background-color: #000;
+  text-align: center;
+}
