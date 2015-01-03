@@ -2,57 +2,59 @@
 title: 2015 New Year Evil Plan Generator
 ---
 
-<div id="wrap">
-<div class="header">
-  <div class="row">
-    <div class="small-12 medium-9 large-8 small-centered columns">
-      <h1>What is your devious plan in 2015? <span class="toggle"><%= link_to "Or be nice.", "index.html" %></span></h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-12 small-centered columns">
-      <button class="button radius" id="goButton">Generate My Mischief</button>
-    </div>
-  </div>
-</div>
-
-<div class="resolution">
-  <div class="row">
-    <div class="small-12 large-2 small-centered medium-uncentered columns">
-      <h4>In 2015, I will</h4>
-    </div>
-    <div class="machineContainer">
-      <div class="small-12 medium-3 small-centered medium-uncentered columns">
-        <div id="selection1" class="textMachine">
-          <!-- verb -->
-          <%= partial "verb-dark" %>
-        </div>
+<div class="wrapper">
+  <header class="header">
+    <div class="row">
+      <div class="small-12 medium-9 large-8 small-centered columns">
+        <h1>What is your devious plan in 2015? <span class="toggle"><%= link_to "Or be nice.", "index.html" %></span></h1>
       </div>
+    </div>
+  </header>
 
-      <div class="small-12 medium-3 small-centered medium-uncentered columns">
-        <div id="selection2" class="textMachine">
-          <!-- subject -->
-          <%= partial "subject-dark" %>
-        </div>
+  <div class="resolution">
+    <div class="row">
+      <div class="small-12 large-2 small-centered medium-uncentered columns">
+        <h4>In 2015, I will</h4>
       </div>
+      <div class="machineContainer">
+        <div class="small-12 medium-3 small-centered medium-uncentered columns">
+          <div id="selection1" class="textMachine">
+            <!-- verb -->
+            <%= partial "verb-dark" %>
+          </div>
+        </div>
 
-      <div class="small-12 medium-3 small-centered medium-uncentered columns">
-        <div id="selection3" class="textMachine">
-          <!-- conditional -->
-          <%= partial "condition-dark" %>
+        <div class="small-12 medium-3 small-centered medium-uncentered columns">
+          <div id="selection2" class="textMachine">
+            <!-- subject -->
+            <%= partial "subject-dark" %>
+          </div>
+        </div>
+
+        <div class="small-12 medium-3 small-centered medium-uncentered columns">
+          <div id="selection3" class="textMachine">
+            <!-- conditional -->
+            <%= partial "condition-dark" %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- <div class="row">
-  <div class="small-4 columns">
-    <div class="machineResult" id="selection1Result"></div>
-    <div class="machineResult" id="selection2Result"></div>
-    <div class="machineResult" id="selection3Result"></div>
+    <div class="row">
+      <div class="small-12 small-centered columns">
+        <button class="button radius" id="goButton">Generate My Mischief</button>
+      </div>
+    </div>
   </div>
-</div> -->
 
-<%= partial "_social" %>
+  <!-- <div class="row">
+    <div class="small-4 columns">
+      <div class="machineResult" id="selection1Result"></div>
+      <div class="machineResult" id="selection2Result"></div>
+      <div class="machineResult" id="selection3Result"></div>
+    </div>
+  </div> -->
+
+  <%= partial "_social" %>
+  <div class="push"></div>
 </div>
