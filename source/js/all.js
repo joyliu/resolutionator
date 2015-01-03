@@ -1,7 +1,6 @@
 //= require jquery/dist/jquery
 //= require foundation/js/foundation.min
 //= require jquery.slotmachine
-//= require rrssb.min
 
 $(document).ready(function(){
   var selection1 = $("#selection1").slotMachine({
@@ -19,23 +18,29 @@ $(document).ready(function(){
     delay : 450
   });
 
-  var result1;
-  var result2;
-  var result3;
+  var result1, result2, result3;
+  var resolutionResults;
 
   function onComplete(active){
     switch(this.element[0].id){
       case 'selection1':
-        result1 = $(this)[this.active];
+        var index1 = this.active + 2;
+        result1 = $('#selection1 div').eq(index1).text();
         $("#selection1Result").text(result1);
         break;
       case 'selection2':
-        result2 = this.active;
-        $("#selection2Result").text(this.active);
+        var index2 = this.active + 2;
+        result2 = $('#selection2 div').eq(index2).text();
+        $("#selection2Result").text(result2);
         break;
       case 'selection3':
-        result3 = this.active;
-        $("#selection3Result").text(this.active);
+        var index3 = this.active + 2;
+        result3 = $('#selection3 div').eq(index3).text();
+        $("#selection3Result").text(result3);
+        resolutionResults = result1 + "%20" + result2 + "%20" + result3;
+        var customTweet = "http://twitter.com/home?status=" + resolutionResults + "%20by%20@gophilosophie%20http://resolutionator.philosophie.is"
+        // THIS NEEDS WORK
+        document.getElementById('shareTwitter').attr("href", customTweet);
         break;
     }
   }
