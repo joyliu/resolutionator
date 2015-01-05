@@ -12,7 +12,15 @@
         <meta name="viewport" content="width=device-width">
         <link rel="author" href="humans.txt" />
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+        <link rel="icon" href="/favicon.png" type="image/x-icon">
+
+        <meta property="og:title" content="The Resolutionator: Creating 2015 Resolutions for Your Best and Worst Intentions">
+        <meta property="og:site_name" content="Resolutionator ">
+        <meta property="og:url" content="http://resolutionator.philosophie.is">
+        <meta property="og:description" content="The Resolutionator takes the thinking out of setting goals for 2015. Brought to you by the mildly disturbed people of Philosophie.is">
+        <meta property="fb:app_id" content="334296036761825">
+        <meta property="og:type" content="website">
 
         <script src="//use.typekit.net/hcj6hts.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
@@ -24,6 +32,8 @@
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+
+        <%= partial "_facebook-sdk" %>
 
         <%= yield %>
 
