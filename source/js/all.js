@@ -1,6 +1,8 @@
 //= require jquery/dist/jquery
 //= require foundation/js/foundation.min
 //= require jquery.slotmachine
+//= require jquery.popupwindow
+//= require social
 
 $(document).ready(function(){
   var selection1 = $("#selection1").slotMachine({
@@ -38,14 +40,14 @@ $(document).ready(function(){
         result3 = $('#selection3 div').eq(index3).text();
         $("#selection3Result").text(result3);
         resolutionResults = result1 + "%20" + result2 + "%20" + result3;
-        var customTweet = "http://twitter.com/home?status=" + resolutionResults + "%20by%20@gophilosophie%20http://resolutionator.philosophie.is"
+        // var customTweet = "http://twitter.com/home?status=" + resolutionResults + "%20by%20@gophilosophie%20http://resolutionator.philosophie.is"
         // THIS NEEDS WORK
         document.getElementById('shareTwitter').attr("href", customTweet);
         break;
     }
   }
 
-  $("#goButton").click(function(){
+  $('#goButton').click(function(){
     selection1.shuffle(5, onComplete);
 
     setTimeout(function(){

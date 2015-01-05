@@ -1,40 +1,40 @@
 ---
-title: 2015 Resolutionator
+title: 2015 Resolutionator For Work
 ---
 
 <div class="wrapper">
   <header class="header">
     <div class="row">
       <div class="small-12 medium-9 large-9 small-centered columns">
-        <h1>What is your 2015 new year resolution <span class="toggle">for life, <%= link_to "for work", "for-work.html" %>, <%= link_to "for funsies", "for-funsies.html" %></span>?</h1>
+        <h1>What is your 2015 new year resolution <span class="toggle"><%= link_to "for life", "index.html" %>, for work, <%= link_to "for funsies", "for-funsies.html" %></span>?</h1>
       </div>
     </div>
   </header>
 
   <div class="resolution">
     <div class="row">
-      <div class="small-12 large-2 small-centered large-uncentered columns">
+      <div class="small-12 large-2 small-centered medium-uncentered columns">
         <h4>In 2015, I will</h4>
       </div>
       <div class="machineContainer">
         <div class="small-12 medium-3 small-centered medium-uncentered columns">
           <div id="selection1" class="textMachine">
             <!-- verb -->
-            <%= partial "verb" %>
+            <%= partial "verb-work" %>
           </div>
         </div>
 
         <div class="small-12 medium-3 small-centered medium-uncentered columns">
           <div id="selection2" class="textMachine">
             <!-- subject -->
-            <%= partial "subject" %>
+            <%= partial "subject-work" %>
           </div>
         </div>
 
         <div class="small-12 medium-3 small-centered medium-uncentered columns">
           <div id="selection3" class="textMachine">
             <!-- conditional -->
-            <%= partial "condition" %>
+            <%= partial "condition-work" %>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@ title: 2015 Resolutionator
 
     <div class="row">
       <div class="small-12 small-centered columns">
-        <button class="button radius" id="goButton">Generate My Resolution</button>
+        <button class="button radius" id="goButton">Generate My Mischief</button>
       </div>
     </div>
   </div>

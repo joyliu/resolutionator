@@ -8,6 +8,13 @@
 
 html, body {
   height: 100%;
+  text-align:center;
+}
+
+body {
+  background-size: 800px 800px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .wrapper {
@@ -27,12 +34,20 @@ html, body {
 }
 
 .resolution {
-  margin: 8rem 0;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+}
+
+.toggle {
+  color: #555;
+  a {
+    text-decoration: underline;
+  }
 }
 
 h4 {
@@ -50,10 +65,6 @@ h5 {
   margin-top: 2rem;
 }
 
-.button-container {
-  margin-top: 3rem;
-}
-
 .button {
   background-color: #fff;
   &:hover {
@@ -62,30 +73,34 @@ h5 {
   }
 }
 
-#facebook-btn {
-  background-color: #fff;
-  color: #3c599b;
-  border-color: #3c599b;
-  &:hover {
-    color: #fff;
-    background-color: #3c599b;
-  }
-}
+// #facebook-btn {
+//   background-color: #fff;
+//   color: #3c599b;
+//   border-color: #3c599b;
+//   &:hover {
+//     color: #fff;
+//     background-color: #3c599b;
+//   }
+// }
 
-#twitter-btn {
-  background-color: #fff;
-  color: #55ACEE;
-  border-color: #55ACEE;
-  &:hover {
-    color: #fff;
-    background-color: #55ACEE;
-  }
-}
+// #twitter-btn {
+//   background-color: #fff;
+//   color: #55ACEE;
+//   border-color: #55ACEE;
+//   &:hover {
+//     color: #fff;
+//     background-color: #55ACEE;
+//   }
+// }
 
-.toggle {
-  color: #222;
-  font-size: 1.5rem;
-  text-decoration: underline;
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  &:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
 }
 
 footer {
@@ -139,47 +154,39 @@ footer {
 
 // PAGE-SPECIFIC STYLING
 .index {
-  text-align: center;
-  background-image: url("../img/resolution_generator_saint.jpg");
-  background-size: 100% auto;
+  background-image: url("../img/logo.svg");
 }
 
-.nsfw {
-  text-align: center;
-  background-image: url("../img/resolution_generator_evil-1.jpg");
-  background-size: 100% auto;
-  background-color: #ca003b;
-  .button {
-    background-color: #ca003b;
-    &:hover {
-      color: #fff;
-      background-color: #222;
-    }
+.for-funsies {
+  background-color: #222;
+  background-image: url("../img/logo-for-funsies.svg");
+  color: #fff;
+  h1, h4, a {
+    color: #fff;
   }
-
-  #facebook-btn {
-    background-color: #ca003b;
-    color: #3c599b;
-    border-color: #3c599b;
-    &:hover {
-      color: #fff;
-      background-color: #3c599b;
-    }
+  .toggle {
+    color: #888;
   }
+}
 
-  #twitter-btn {
-    background-color: #ca003b;
-    color: #55ACEE;
-    border-color: #55ACEE;
-    &:hover {
-      color: #fff;
-      background-color: #55ACEE;
-    }
+.for-work {
+  background-color: #fafafa;
+  background-image: url("../img/logo-for-work.svg");
+  color: #e22d60;
+  h1, h4, a {
+    color: #e22d60;
+  }
+  .toggle {
+    color: #8C193A;
   }
 }
 
 // RESPONSIVE STYLING
 @media #{$medium-only} {
+  body {
+    background-size: 600px 600px;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
@@ -187,6 +194,10 @@ footer {
 }
 
 @media #{$small-only} {
+  body {
+    background-size: 320px 320px;
+  }
+
   h1 {
     font-size: 2rem;
   }
