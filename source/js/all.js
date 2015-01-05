@@ -2,7 +2,6 @@
 //= require foundation/js/foundation.min
 //= require jquery.slotmachine
 //= require jquery.popupwindow
-//= require social
 
 $(document).ready(function(){
   var selection1 = $("#selection1").slotMachine({
@@ -20,8 +19,11 @@ $(document).ready(function(){
     delay : 450
   });
 
-  var result1, result2, result3;
-  var resolutionResults;
+  var result1,
+  result2,
+  result3,
+  resolutionResults,
+  customTweet;
 
   function onComplete(active){
     switch(this.element[0].id){
@@ -40,9 +42,7 @@ $(document).ready(function(){
         result3 = $('#selection3 div').eq(index3).text();
         $("#selection3Result").text(result3);
         resolutionResults = result1 + "%20" + result2 + "%20" + result3;
-        // var customTweet = "http://twitter.com/home?status=" + resolutionResults + "%20by%20@gophilosophie%20http://resolutionator.philosophie.is"
-        // THIS NEEDS WORK
-        document.getElementById('shareTwitter').attr("href", customTweet);
+        customTweet = "http://twitter.com/home?status=In%202015%20I%20will%20" + resolutionResults + ".%20%23resolutionator%20http://resolutionator.philosophie.is"
         break;
     }
   }
@@ -57,5 +57,22 @@ $(document).ready(function(){
     setTimeout(function(){
       selection3.shuffle(5, onComplete);
     }, 1000);
+  });
+
+  $('#socialFacebook').on('click', function(event) {
+    event.preventDefault();
+    $.popupWindow('https://www.facebook.com/sharer/sharer.php?u=http://resolutionator.philosophie.is', {
+      width: 700,
+      center: 'parent'
+    });
+  });
+
+  $('#socialTwitter').on('click', function(event) {
+    event.preventDefault();
+    $.popupWindow(customTweet, {
+      width: 700,
+      height: 305,
+      center: 'parent'
+    });
   });
 });
