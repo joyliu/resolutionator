@@ -23,7 +23,7 @@ $(document).ready(function(){
   result2,
   result3,
   resolutionResults,
-  customTweet;
+  customTweet = "http://twitter.com/share?text=Create%20your%20new%20year%20resolution%20using%20%23resolutionator&via=gophilosophie&hashtags=2015,NewYearsResolution&url=http://resolutionator.philosophie.is";
 
   function onComplete(active){
     switch(this.element[0].id){
@@ -42,7 +42,7 @@ $(document).ready(function(){
         result3 = $('#selection3 div').eq(index3).text();
         $("#selection3Result").text(result3);
         resolutionResults = result1 + "%20" + result2 + "%20" + result3;
-        customTweet = "http://twitter.com/home?status=In%202015%20I%20will%20" + resolutionResults + ".%20%23resolutionator%20http://resolutionator.philosophie.is";
+        customTweet = "http://twitter.com/share?text=In%202015%2C%20I%20will%20" + resolutionResults + ".%20%23resolutionator&via=gophilosophie&hashtags=2015,NewYearsResolution&url=http://resolutionator.philosophie.is";
         break;
     }
   }

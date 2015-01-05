@@ -60,6 +60,12 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+# Deploy middleman to AWS
+Frizz.configure do |config|
+  config.access_key_id = "AKIAISHWYMEONXM65DUQ"
+  config.secret_access_key = "4wdINajvYMYY9/CLfYLzo/D11uGO+Wzzn18dHX2X"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
