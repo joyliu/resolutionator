@@ -140,10 +140,14 @@ footer {
 // PAGE-SPECIFIC STYLING
 .index {
   text-align: center;
+  background-image: url("../img/resolution_generator_saint.jpg");
+  background-size: 100% auto;
 }
 
 .nsfw {
   text-align: center;
+  background-image: url("../img/resolution_generator_evil-1.jpg");
+  background-size: 100% auto;
   background-color: #ca003b;
   .button {
     background-color: #ca003b;
