@@ -1,19 +1,18 @@
-/* humanstxt.org */
 /* TEAM */
-  Idea & Development: Joy Liu
-  Twitter: @enjoy_injoy
+    Idea / Development: Joy Liu
+    Twitter: @enjoy_injoy
 
-  Content Strategy & Copy Edits: Stephen Miranda
-  Twitter: @stephenmiranda
+    Content Strategy / Copy Edits: Stephen Miranda
+    Twitter: @stephenmiranda
 
-  Visual Design: Jean-Nicola Bayette
-  Twitter: @jnbayette
+    Visual Design: Jean-Nicola Bayette
+    Twitter: @jnbayette
 
 /* THANKS */
-  Everyone at Philosophie for contributing to the resolutionator database
+    Everyone at Philosophie for contributing to the resolutionator database.
 
 /* SITE */
-  Last update: 2015/01/02
-  Standards: HTML5, CSS3
-  Components: jQuery, Modernizr, jQuery-SlotMachine, Foundation
-  Software: Sublime Text, Git
+    Last update: 2015/01/05
+    Standards: HTML5, CSS3
+    Components: jQuery, Foundation, Modernizr, jQuery-SlotMachine, jquery-popupwindow
+    Software: Sublime Text, Git, Photoshop, Illustrator, Typekit

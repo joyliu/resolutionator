@@ -114,21 +114,12 @@ footer {
   display: inline-block;
   text-align: center;
   border-bottom: 1px solid;
-}
-
-#selection1 {
-  width: 240px;
-}
-#selection2 {
-  width: 240px;
-}
-#selection3 {
   width: 240px;
 }
 
 .slot {
   height: 38px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .comma {
@@ -215,5 +206,9 @@ footer {
 
   .resolution {
     margin: 4rem 0;
+  }
+
+  .textMachine {
+    width: 310px;
   }
 }
