@@ -7,20 +7,28 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <!-- Use title if it's in the page YAML frontmatter -->
-        <title><%= current_page.data.title || "2015 Resolutionator" %></title>
-        <meta name="description" content="">
+        <title><%= current_page.data.title || "The Resolutionator" %></title>
+        <meta name="description" content="The Resolutionator: Creating 2015 Resolutions for Your Best and Worst Intentions">
+
+        <meta property="og:title" content="The Resolutionator: Creating 2015 Resolutions for Your Best and Worst Intentions" />
+        <meta property="og:site_name" content="Resolutionator " />
+        <meta property="og:url" content="http://resolutionator.philosophie.is" />
+        <meta property="og:description" content="The Resolutionator takes the thinking out of setting goals for 2015. Brought to you by the mildly disturbed people of Philosophie.is" />
+        <meta property="og:image" content="http://resolutionator.philosophie.is/img/share-preview.png" />
+        <meta property="fb:app_id" content="334296036761825" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@gophilosophie" />
+        <meta name="twitter:title" content="The Resolutionator: Creating 2015 Resolutions for Your Best and Worst Intentions" />
+        <meta name="twitter:description" content="The Resolutionator takes the thinking out of setting goals for 2015. Brought to you by the mildly disturbed people of Philosophie.is" />
+        <meta name="twitter:image" content="http://resolutionator.philosophie.is/img/share-preview.png" />
+        <meta name="twitter:url" content="http://resolutionator.philosophie.is" />
+
         <meta name="viewport" content="width=device-width">
         <link rel="author" href="humans.txt" />
-
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
         <link rel="icon" href="/favicon.png" type="image/x-icon">
-
-        <meta property="og:title" content="The Resolutionator: Creating 2015 Resolutions for Your Best and Worst Intentions">
-        <meta property="og:site_name" content="Resolutionator ">
-        <meta property="og:url" content="http://resolutionator.philosophie.is">
-        <meta property="og:description" content="The Resolutionator takes the thinking out of setting goals for 2015. Brought to you by the mildly disturbed people of Philosophie.is">
-        <meta property="fb:app_id" content="334296036761825">
-        <meta property="og:type" content="website">
 
         <script src="//use.typekit.net/hcj6hts.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
@@ -43,10 +51,14 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-58261015-1', 'auto');
+          ga('send', 'pageview');
+
         </script>
     </body>
 </html>
