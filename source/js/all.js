@@ -25,7 +25,7 @@ $(document).ready(function(){
   result2,
   result3,
   resolutionResults,
-  customTweet = "http://twitter.com/share?text=Create%20your%20new%20year%20resolution%20using%20%23resolutionator&via=gophilosophie&hashtags=2015,NewYearsResolution&url=http://resolutionator.philosophie.is";
+  customTweet = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fresolutionator.philosophie.is&via=gophilosophie&text=Create%20your%20new%20year%20resolutions%20using%20The%20Resolutionator.&hashtags=resolutionator%2CNewYearsResolution&";
 
   function onComplete(active){
     switch(this.element[0].id){
@@ -44,7 +44,7 @@ $(document).ready(function(){
         result3 = $('#selection3 div').eq(index3).text();
         $("#selection3Result").text(result3);
         resolutionResults = result1 + "%20" + result2 + "%20" + result3;
-        customTweet = "http://twitter.com/share?text=In%202015%2C%20I%20will%20" + resolutionResults + "%20%23resolutionator&via=gophilosophie&hashtags=2015,NewYearsResolution&url=http://resolutionator.philosophie.is";
+        customTweet = "https://twitter.com/intent/tweet?url=http%3A%2F%2Fresolutionator.philosophie.is&via=gophilosophie&text=In%202015%2C%20I%20will%20" + resolutionResults + "&hashtags=resolutionator%2CNewYearsResolution&";
         break;
     }
   }
@@ -64,7 +64,7 @@ $(document).ready(function(){
   $('#socialFacebook').on('click', function(event) {
     event.preventDefault();
     $.popupWindow('https://www.facebook.com/sharer/sharer.php?u=http://resolutionator.philosophie.is', {
-      width: 700,
+      width: 600,
       center: 'parent'
     });
   });
@@ -72,8 +72,8 @@ $(document).ready(function(){
   $('#socialTwitter').on('click', function(event) {
     event.preventDefault();
     $.popupWindow(customTweet, {
-      width: 700,
-      height: 305,
+      width: 550,
+      height: 420,
       center: 'parent'
     });
   });

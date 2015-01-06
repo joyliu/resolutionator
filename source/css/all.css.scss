@@ -20,11 +20,11 @@ body {
 
 .wrapper {
   min-height: 100%;
-  margin-bottom: -142px;
+  margin-bottom: -140px;
 }
 
 .footer, .push {
-  height: 142px;
+  height: 140px;
 }
 
 .header {
@@ -49,7 +49,7 @@ h1 {
 }
 
 .toggle {
-  color: #555;
+  color: #888;
   text-decoration: underline;
 }
 
@@ -76,10 +76,14 @@ h5 {
   }
 }
 
+.social-container {
+  margin-bottom: 2rem;
+}
+
 .social-icon {
   width: 30px;
   height: 30px;
-  margin-right: 0.5rem;
+  margin: 0 1.5rem;
   &:hover {
     opacity: 0.8;
     filter: alpha(opacity=80);
@@ -120,10 +124,6 @@ footer {
 .slot {
   height: 38px;
   font-size: 1.5rem;
-}
-
-.comma {
-  font-size: 2.5rem;
 }
 
 // PAGE-SPECIFIC STYLING
@@ -185,27 +185,39 @@ footer {
     background-size: 600px 600px;
   }
 
+  .header {
+    margin: 5rem 0 4rem 0;
+  }
+
+  .resolution {
+    margin: 6rem 0;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
 
+  .textMachine {
+    width: 230px;
+  }
 }
 
 @media #{$small-only} {
   body {
-    background-size: 320px 320px;
+    background-size: 250px 250px;
+    background-position: center top;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .header {
-    margin: 2rem 0 3rem 0;
+    margin: 2.5rem 0 2rem 0;
   }
 
   .resolution {
-    margin: 4rem 0;
+    margin: 2rem 0 1rem 0;
   }
 
   .textMachine {
